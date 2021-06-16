@@ -1,11 +1,6 @@
 import React from "react";
-import Nav from "../../components/nav";
 
 function Home() {
-  return (
-    <div>
-      <Nav />
-    </div>
-  );
+  return <div>1</div>;
 }
 export default Home;

@@ -23,12 +23,20 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 24,
     color: "#B4EEB4",
   },
+  p: {
+    color: "#B4EEB4",
+    display: "flex",
+    alignItems: "center",
+    fontSize: 32,
+    marginRight: 100,
+  },
 }));
 
 function Nav() {
   const classes = useStyles();
   return (
     <nav className={classes.nav}>
+      <p className={classes.p}>FLYFORLIFE</p>
       <ul className={classes.ul}>
         <Link className={classes.link} to="/">
           <li>Home</li>

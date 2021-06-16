@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import Home from "./views/home";
 import Launches from "./views/launches";
 import Spacestations from "./views/spacestations";
@@ -9,38 +9,21 @@ import Agencies from "./views/agencies";
 import Events from "./views/events";
 import News from "./views/news";
 import About from "./views/about";
+import AppLayout from "./layout";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route>
-          <Launches />
-        </Route>
-        <Route>
-          <Spacestations />
-        </Route>
-        <Route>
-          <Astronauts />
-        </Route>
-        <Router>
-          <Programs />
-        </Router>
-        <Route>
-          <Agencies />
-        </Route>
-        <Route>
-          <Events />
-        </Route>
-        <Route>
-          <News />
-        </Route>
-        <Route>
-          <About />
-        </Route>
+        <AppLayout exact component={Home} />
+        <AppLayout exact component={Spacestations} />
+        <AppLayout exact component={Launches} />
+        <AppLayout exact component={Astronauts} />
+        <AppLayout exact component={Programs} />
+        <AppLayout exact component={Agencies} />
+        <AppLayout exact component={Events} />
+        <AppLayout exact component={News} />
+        <AppLayout exact component={About} />
       </Switch>
     </Router>
   );

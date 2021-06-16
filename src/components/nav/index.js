@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
+import SocialMedia from "../socialMedia";
 
 const useStyles = makeStyles((theme) => ({
   nav: {
@@ -66,6 +67,7 @@ function Nav() {
           <li>About</li>
         </Link>
       </ul>
+      <SocialMedia />
     </nav>
   );
 }

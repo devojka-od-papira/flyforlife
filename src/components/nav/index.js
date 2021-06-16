@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#B4EEB4",
   },
   p: {
-    color: "#B4EEB4",
+    color: "#007777",
     display: "flex",
     alignItems: "center",
     fontSize: 32,

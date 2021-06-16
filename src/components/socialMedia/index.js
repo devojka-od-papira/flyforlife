@@ -6,10 +6,10 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 
 const useStyles = makeStyles((theme) => ({
   media: {
-    color: "#B4EEB4",
+    color: "#fff",
     display: "flex",
     alignItems: "center",
-    marginLeft: 100,
+    marginLeft: 250,
   },
   icon: {
     marginLeft: 10,

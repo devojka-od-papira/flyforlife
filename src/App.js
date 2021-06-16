@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./views/home";
 import Launches from "./views/launches";
 import Spacestations from "./views/spacestations";
@@ -15,15 +15,15 @@ function App() {
   return (
     <Router>
       <Switch>
-        <AppLayout exact component={Home} />
-        <AppLayout exact component={Spacestations} />
-        <AppLayout exact component={Launches} />
-        <AppLayout exact component={Astronauts} />
-        <AppLayout exact component={Programs} />
-        <AppLayout exact component={Agencies} />
-        <AppLayout exact component={Events} />
-        <AppLayout exact component={News} />
-        <AppLayout exact component={About} />
+        <AppLayout exact path="/" component={Home} />
+        <AppLayout exact path="/spacestations" component={Spacestations} />
+        <AppLayout exact path="/launches" component={Launches} />
+        <AppLayout exact path="/astronauts" component={Astronauts} />
+        <AppLayout exact path="/programs" component={Programs} />
+        <AppLayout exact path="/agencies" component={Agencies} />
+        <AppLayout exact path="/events" component={Events} />
+        <AppLayout exact path="/news" component={News} />
+        <AppLayout exact path="/about" component={About} />
       </Switch>
     </Router>
   );
